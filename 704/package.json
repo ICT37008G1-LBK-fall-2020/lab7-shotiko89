@@ -1,0 +1,20 @@
+{
+  "name": "task704",
+  "version": "1.0.0",
+  "description": "task704 desc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify --entry index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env] ]",
+    "watch": "watchify --entry index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env] ] -v"
+  },
+  "author": "shotiko tsurtsumia",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "watchify": "^3.11.1"
+  }
+}
